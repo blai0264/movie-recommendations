@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css?v1" />
+</head>
+
+<body>
+    <main class="wrapper">
+        <header class="search">
+            <!--<img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back" /> -->
+            <div id="search-button">
+                <img id="search-image" class="iconic iconic-md" data-src="./img/magnifying-glass-md.svg" alt="Search" title="Search" />
+            </div>
+            <input type="text" id="search-input" placeholder="search for a movie..." />
+        </header>
+
+        <div class="page active" id="recommend-results">
+            <section class="title"></section>
+            <section class="content"></section>
+        </div>
+
+        <div class="page active" id="search-results">
+            <section class="title">
+               <h2 id="marcus"> Marcus' Movie Database</h2>
+                <h3 id="instructions">Instructions</h3>
+                <ol id="please-search">
+                    <li>
+                        Use the search bar above to search for a movie.
+                    </li>
+                    <li>
+                        Click on any movie to generate a new list of similar movies.
+                    </li>
+                    <li>
+                        Dont forget to share this awesome website with your friends!
+                    </li>
+                </ol>
+                <!-- Your search returned X results -->
+            </section>
+            <section class="content">
+                    <div id="moviess" class="movie">
+                        <img class="poster" alt="movie poster" />
+                        <h2 class="movie-title"></h2>
+                        <p></p>
+                    </div>
+                <div class="attribution">
+                    <img src="img/208x226-stacked-blue.png" alt="The Movie DB" />
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="loading not">
+        <img class="iconic" data-src="./img/loop-circular-md.svg" alt="icon" title="loop circular" />
+    </div>
+
+    <script src="./js/iconic.min.js"></script>
+    <script src="./js/key.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

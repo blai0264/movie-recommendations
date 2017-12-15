@@ -1,0 +1,204 @@
+/*********************
+        DEFAULTS
+*********************/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Spectral+SC');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: black;
+    background-image: url("https://cdn-images-1.medium.com/max/2000/1*lEOjG5403Pg4JOLHr4PtdA.jpeg");
+}
+
+img{
+    border: 2px solid white;
+}
+
+    
+h2{
+    font-family: "Spectral SC", Times, "Times New Roman", serif;
+}
+h3{
+    text-decoration: underline;
+    color: white;
+    font-size: 2rem;
+}
+
+li{
+    max-width: 1000px;
+}
+
+/***************************
+        NAVIGATION
+****************************/
+.page {
+    display: none;
+    margin-top: 3rem;
+    padding: 1rem;
+    max-width: 800px;
+    background-color: hsla(0, 100%, 47%,0.7);
+}
+
+.page.active{
+    display:block;
+}
+
+
+
+.not{
+    display: none;
+}
+/***************************
+        SEARCH BAR
+****************************/
+.search{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3rem;
+}
+
+#search-input{
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    height: 3rem;
+    z-index: 110;
+    left: 0;
+    top: 0;
+    right: 1.5rem;
+    width: 40%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    transition: width .4s;
+    font-family: "Spectral SC", Times, "Times New Roman", serif;
+}
+
+#please-search{
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+#marcus{
+    text-align: center;
+    line-height: 2.2rem;
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 5px;
+}
+#search-button{
+    position: absolute;
+    text-align: center;
+    padding-top: .3rem;
+    height: 3rem;
+    z-index: 120;
+    width: 3rem;
+    top: 0;
+    right: 0;
+    background-color: red;
+    border: 2px solid lightblue;
+}
+
+#search-button:hover{
+    cursor: pointer;
+    border: 2px solid lightblue;
+}
+
+#search-input:hover{
+    width: 100%;
+}
+/***************************
+        SEARCH RESULTS
+****************************/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie {
+    max-width: 800px;
+    box-shadow: 3px 3px black;
+    padding: 1rem;
+    border: 5px solid white;
+    overflow: auto; /* Make the border wrap floated children */
+    clear: both;
+    background-color: black;
+    color: red;
+    margin-top: 10px;
+}
+     
+.poster{
+    float:left;
+    margin: 0 0.5rem 0.5rem 0;
+    width: 150px;
+    height: auto;
+    min-height: 150px;
+    
+}
+
+.movie-title{
+    font-size: 2rem;
+    color: #333;
+    font-family: "Spectral SC", Times, "Times New Roman", serif;
+    
+}
+
+p{
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+#p2{
+    color: red;
+    text-align: center;
+}
+#p3{
+    color: red;
+    text-align: center;
+}
+div{
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    font-family: "Spectral SC", Times, "Times New Roman", serif;
+}
+
+div:hover{
+    cursor:pointer;  
+}
+.movie-desc{
+    font-size: 1rem;
+    color: #fff;
+    
+}
+
+.attribution{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution img{
+    margin: 0 auto;
+    width: 25%;
+    height: auto;
+    border: none;
+        
+}
+
+/***************************
+        Recommendations
+****************************/
